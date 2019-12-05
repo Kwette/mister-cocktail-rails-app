@@ -1,24 +1,15 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+Rails Mister Cocktails is a Ruby on Rails'app based on a C.R.U.D developped at  "Le Wagon Marseille" during the bootcamp.
 
-* Ruby version
+- A user can access to all cocktails recipes'list.
+- A user can add and delete a cocktail's recipe.
+- A user can choose his ingredients in the list.
+- A user can add delete a doses.
+- A user can add reviews.
 
-* System dependencies
+This app is always in developpement :
+=>  Needs to refactoring the code.
+=> Needs more realistic seeds
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...

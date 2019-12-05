@@ -1,0 +1,21 @@
+<div class="banner d-flex align-items-center">
+  <div class="container d-flex justify-content-start align-items-center">
+    <div class="cocktail-show mt-4">
+      <h2 style="font-size: 3.5em">Review</h2>
+      <h1><%= @cocktail.name %></h1>
+      <div class="cocktail-recipe">
+        <%= simple_form_for([@cocktail, @review]) do |f| %>
+        <div class='form-input'>
+          <%= f.input :rating, collection: 0..5 %>
+          <%= f.input :content %>
+          <div class="btn mt-2 pl-0 mb-4">
+            <%= f.button :submit, 'Add your review', class:'dose-btn' %>
+            <%= link_to "Back to Cocktails", cocktails_path %>
+
+          </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

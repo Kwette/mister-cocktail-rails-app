@@ -1,0 +1,126 @@
+.banner-home h1 {
+  margin: 0;
+  color: white;
+  opacity: 0.8;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  font-size: 8em;
+  font-family: 'Montserrat', sans-serif;
+
+}
+.banner-home, .banner, .banner-index, .banner-new, .banner-doses{
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.banner-home{
+  padding: 150px 0;
+  background-image: asset-url('drink-1870139_1920.jpg');
+  // background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(../../assets/images/cocktails-sans-alcool.jpg);
+}
+
+.banner-home a{
+  margin-top: 2em;
+  font-size: 22px;
+  color: white;
+  border: 1px solid white;
+  background-color: transparent;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 4px;
+  padding: 0.6em;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  }
+.banner-home a:hover{
+  text-decoration: none;
+  background-color: rgba(230, 230, 230, 0.4);
+  color: white;
+}
+
+.banner {
+  padding: 30px 0;
+  background-image: asset-url('cocktail-594173_1920.jpg');
+  font-family: 'Montserrat', sans-serif;
+  // background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(../../assets/images/cocktails-sans-alcool.jpg);
+}
+.banner h1, .banner-index h1{
+  margin: 0;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  opacity: 0.8;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  font-size: 4em;
+  background-repeat: no-repeat;
+}
+.banner span{
+  font-size: 0.3em;
+}
+.banner .btn a{
+  margin-top: 2em;
+  margin-right: 1em;
+  font-size: 16px;
+  color: white;
+  opacity: 0.7;
+  border: 1px solid white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 4px;
+  padding: 0.7em;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  }
+.banner .btn a:hover, .dose-btn:hover{
+  text-decoration: none;
+  background-color: rgba(230, 230, 230, 0.4);
+  color: white;
+}
+.dose-btn{
+  margin-right: 1em;
+  font-size: 16px;
+  color: white;
+  opacity: 0.7;
+  border: 1px solid white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 4px;
+  padding: 0.6em;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  }
+.banner-new h1 {
+  margin: 0;
+  color: white;
+  opacity: 0.8;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  font-size: 8em;
+  font-family: 'Montserrat', sans-serif;
+
+}
+.banner-new {
+  padding: 150px 0;
+  background-image: asset-url('vegetarianism-1248951_1920.jpg');
+  // background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(../../assets/images/cocktails-sans-alcool.jpg);
+}
+.banner-new a{
+  margin-top: 2em;
+  font-size: 22px;
+  color: white;
+  border: 1px solid white;
+  background-color: transparent;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 4px;
+  padding: 0.6em;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  }
+.banner-new a:hover{
+  text-decoration: none;
+  background-color: rgba(230, 230, 230, 0.4);
+  color: white;
+}
+.banner-doses {
+  padding: 30px 0;
+  background-image: asset-url('macro-2116936_1920.jpg');
+  font-family: 'Montserrat', sans-serif;
+  // background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(../../assets/images/cocktails-sans-alcool.jpg);
+}

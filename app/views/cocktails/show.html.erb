@@ -1,0 +1,62 @@
+<div class="banner">
+
+  <div class="container d-flex justify-content-start align-items-center" style=" height: auto;">
+    <div class="cocktail-show ">
+      <div class="d-flex align-items-center justify-content-start">
+        <h1 class="mt-4 mb-4 mr-4"><%= @cocktail.name.capitalize %></h1>
+        <div class="btn mt-2 pl-0 mb-2">
+          <%= link_to new_cocktail_dose_path(@cocktail) do %>
+          <i class="fas fa-pencil-alt"></i>
+          <% end %>
+          <%= link_to "Delete", cocktail_path(@cocktail),
+          method: :delete,
+          data: { confirm: "Are you sure?" }  %>
+        </div>
+      </div>
+      <h2 class="mt-4"><%= "To make some wicked #{@cocktail.name.capitalize}s,"%></h2>
+      <h2 class="mb-4"><%= "all you need is ->" %></h2>
+      <div class="cocktail-recipe">
+        <% counter = 0 %>
+        <% @cocktail.doses.each do |dose| %>
+        <div class="d-flex align-items-center justify-content-between">
+          <p class="mb-4" style="font-size: 1.3em"><span class="counter"><%= counter += 1 %></span><%= dose.description.capitalize %> of <%= dose.ingredient.name.capitalize %></p>
+        </div>
+        <% end %>
+      </div>
+      <!-- -------------------------- REVIEWS -----------------------------
+      -->
+      <div class="reviews cocktail-show mb-4">
+        <div class="d-flex align-items-center justify-content-start mb-3 ">
+          <h2>Reviews</h2>
+          <div class="btn">
+            <%= link_to new_cocktail_review_path(@cocktail) do %>
+            <i class="fas fa-plus"></i>
+            <% end %>
+            <%= link_to "Back to Cocktails", cocktails_path %>
+          </div>
+        </div>
+        <% if @cocktail.reviews.empty? %>
+        <p>Be the first to let a review</p>
+        <% else %>
+        <ul class="list-group">
+          <% @cocktail.reviews.each do |review| %>
+          <li class="reviews-list d-flex justify-content-start align-items-center mb-2">
+            <span class="rating badge badge-primary badge-pill d-flex justify-content-around">
+              <% counter = 0 %>
+              <% 5.times do %>
+              <i class="fa <%= review.rating > counter ? 'fa-star' : 'fa-star-o' %> stars"></i>
+              <% counter += 1 %>
+              <% end %>
+            </span>
+            <p class="reviews"><%= review.content.capitalize %></p>
+          </li>
+          <% end %>
+        </ul>
+        <% end %>
+      </div>
+    </div>
+    <!-- ------------------------- END REVIEWS ----------------------------
+    -->
+  </div>
+</div>
+</div>

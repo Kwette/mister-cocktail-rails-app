@@ -1,0 +1,15 @@
+// Import your components CSS files here.
+@import "alert";
+@import "avatar";
+@import "navbar";
+@import "banners";
+@import "card-grid";
+
+
+body, a{
+  color: #23282E;
+}
+
+li{
+  list-style-type: none;
+}

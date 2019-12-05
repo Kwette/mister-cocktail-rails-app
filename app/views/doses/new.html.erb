@@ -1,0 +1,35 @@
+<div class="banner">
+  <div class="container d-flex justify-content-start">
+    <div class="cocktail-show">
+      <h1><%= @cocktail.name %></h1>
+      <div class="cocktail-recipe">
+        <% counter = 0 %>
+        <% @cocktail.doses.each do |dose| %>
+        <div class="d-flex align-items-center justify-content-between">
+          <p class="mb-4" style="font-size: 1.1em"><span class="counter"><%= counter += 1 %></span><%= dose.description.capitalize %> of <%= dose.ingredient.name.capitalize %>
+        </p>
+        <div class="btn pl-0 mb-4">
+          <%= link_to dose_path(dose), class:'link-icon last', method: :delete, data: { confirm: "Are you sure?" } do %>
+          <i class="fas fa-trash-alt"></i>
+          <% end %>
+        </div>
+      </div>
+      <% end %>
+    </div>
+    <%= simple_form_for([@cocktail, @dose]) do |f| %>
+    <div class='form-input'>
+      <%= f.input :description %>
+      <%= f.association :ingredient %>
+      <div class="btn mt-2 pl-0 mb-4">
+        <% if @cocktail.doses.count < 1 %>
+        <%= f.button :submit, 'Add to recipe', class:'dose-btn' %>
+        <% else %>
+        <%= f.button :submit, 'Add to recipe', class:'dose-btn' %>
+        <%= link_to "No more ingredient needed", cocktail_path(@cocktail) %>
+        <% end %>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+</div>

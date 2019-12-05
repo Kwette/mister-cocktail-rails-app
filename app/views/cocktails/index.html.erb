@@ -1,0 +1,46 @@
+
+<div class="banner">
+  <div class="container d-flex align-items-center justify-content-start" style=" height: auto;">
+    <div class="home mb-4 pt-4">
+          <div class="d-flex align-items-center justify-content-between ">
+
+      <h1 class="mb-4 mt-4 pt-2">Cocktails
+<!--         <span> (scroll)</span>
+ -->      </h1>
+       <div class="btn mb-4 mt-4 pt-4">
+        <%= link_to "New cocktail", new_cocktail_path %>
+      </div>
+    </div>
+      <!-- <div class="cards">
+       <% counter = 0  %>
+        <% @cocktails.each do |cocktail| %>
+          <div class="card-category cocktail-show" >
+           <span class="counter"><%= counter += 1  %></span>
+          <h2><%= link_to cocktail.name.capitalize, cocktail_path(cocktail) %></h2>
+        </div>
+        <% end %>
+
+      </div> -->
+</div>
+  </div>
+<div class="container cocktail-show card-bg d-flex justify-content-start flex-column">
+  <div class="row pr-4 pl-4 pt-4 pb-0">
+    <% @cocktails.each do |cocktail| %>
+      <div class="col-12 col-md-12 col-lg-4">
+        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://source.unsplash.com/500x400/?cocktail');">
+          <div class="card-description">
+            <h2 class="cocktail-name"><%= cocktail.name %></h2>
+          </div>
+          <%= link_to "", cocktail_path(cocktail), class: 'card-link' %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+  <div class="pagination pl-4 pt-0 pb-4">
+    <%= paginate @cocktails %>
+  </div>
+</div>
+
+
+
+

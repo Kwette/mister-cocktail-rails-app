@@ -1,0 +1,28 @@
+.navbar-lewagon {
+  justify-content: space-between;
+
+}
+
+.navbar-lewagon .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-lewagon .navbar-brand img {
+  width: 40px;
+}
+.navbar{
+  background: transparent;
+  position: absolute;
+  padding: 0;
+}
+h1.nav-title{
+  color: white;
+  opacity: 0.8;
+  text-align: right;
+  padding: 1em;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  width: 98vw;
+  font-weight: 600;
+
+}

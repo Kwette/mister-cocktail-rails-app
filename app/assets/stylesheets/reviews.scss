@@ -1,0 +1,45 @@
+// Place all the styles related to the reviews controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+p.reviews {
+  color: #081905;
+  margin-bottom: 0;
+  font-weight: bold;
+  font-family: 'Lobster Two', cursive;
+  margin-left:1.5em;
+  font-size: 1.3em;
+  opacity: 0.7;
+}
+.reviews{
+  width: 50vw;
+}
+.reviews h2 {
+  font-size: 3em;
+  font-family: 'Lobster Two', cursive;
+  margin-bottom: 0;
+
+}
+.reviews-list{
+    position: relative;
+    display: block;
+    padding: 1.2rem 1.7rem;
+    background-color: rgba(251, 251, 251, 0.7);
+    border-radius: 5px;
+}
+span.rating{
+  font-size: 0.9em;
+  color: #fff;
+  background-color: #467A49;
+  padding: 0.8em;
+}
+i.stars{
+  margin-left: 0.3em;
+  margin-right: 0.3em;
+}
+.fa-star-o{
+  display: none;
+}
+.reviews > a {
+  font-weight: bold;
+  opacity: 1;
+}

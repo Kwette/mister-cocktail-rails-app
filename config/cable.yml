@@ -7,4 +7,4 @@ test:
 production:
   adapter: redis
   url: <%= ENV.fetch("REDIS_URL") { "redis://localhost:6379/1" } %>
-  channel_prefix: mister-cocktail-rails-app_production
+  channel_prefix: rails-mister-cocktail_production

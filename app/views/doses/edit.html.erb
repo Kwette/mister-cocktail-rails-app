@@ -1,0 +1,25 @@
+<div class="banner">
+  <div class="container d-flex justify-content-start">
+    <div class="cocktail-show">
+      <h1><%= @cocktail.name %></h1>
+      <div class="cocktail-recipe">
+        <% counter = 0 %>
+        <% @cocktail.doses.each do |dose| %>
+        <p class="mb-4"><span class="counter"><%= counter += 1 %></span><%= dose.description.capitalize %> of <%= dose.ingredient.name.capitalize %>
+        </p>
+        <% end %>
+      </div>
+      <%= simple_form_for([@cocktail, @dose]) do |f| %>
+      <div class='form-input'>
+        <%= f.input :description %>
+        <%= f.association :ingredient %>
+        <div class="btn mt-2 pl-0 mb-4">
+          <%= f.button :submit, 'Update', class:'dose-btn', method: :patch, data: { confirm: "Are you sure?" } %>
+        </div>
+        <% end %>
+
+
+      </div>
+    </div>
+  </div>
+</div>
