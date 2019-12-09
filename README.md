@@ -1,13 +1,14 @@
 # README
 
 
-Rails Mister Cocktails is a Ruby on Rails'app based on a C.R.U.D developped at  "Le Wagon Marseille" during the bootcamp.
+Rails Mister Cocktails is a Ruby on Rails'app based on a C.R.U.D developped at  "Le Wagon Marseille".
 
-- A user can access to all cocktails recipes'list.
-- A user can add and delete a cocktail's recipe.
-- A user can choose his ingredients in the list.
-- A user can add delete a doses.
-- A user can add reviews.
+As a user I can :
+- Access to all cocktails recipes'list.
+- Add and delete a cocktail's recipe.
+- Choose his ingredients in the list.
+- Add delete a doses.
+- Post reviews.
 
 This app is always in developpement :
 =>  Needs to refactoring the code.
