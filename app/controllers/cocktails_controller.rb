@@ -1,6 +1,6 @@
 class CocktailsController < ApplicationController
   def index
-    @cocktails = Cocktail.page(params[:page]).per(6)
+    @cocktails = Cocktail.all.page(params[:page]).per(6)
   end
 
   def new
